@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <main className="min-h-screen bg-black text-white">
-      {/* Hero Section */}
+      {/* Hero */}
       <div className="relative h-screen">
         <img 
           src="/hero.jpeg" 
@@ -35,27 +35,40 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Cards Section */}
+      {/* Cards */}
       <div className="max-w-7xl mx-auto px-6 py-16">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           <div className="group relative overflow-hidden rounded-3xl aspect-video bg-zinc-900">
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
             <div className="absolute bottom-6 left-6 text-2xl font-bold">CAMISETAS</div>
           </div>
-
           <div className="group relative overflow-hidden rounded-3xl aspect-video bg-zinc-900">
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
             <div className="absolute bottom-6 left-6 text-2xl font-bold">ACCESORIOS</div>
           </div>
-
           <div className="group relative overflow-hidden rounded-3xl aspect-video bg-zinc-900">
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
             <div className="absolute bottom-6 left-6 text-2xl font-bold">NUEVAS LLEGADAS</div>
           </div>
-
           <div className="group relative overflow-hidden rounded-3xl aspect-video bg-zinc-900">
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
             <div className="absolute bottom-6 left-6 text-2xl font-bold">OFERTAS</div>
+          </div>
+        </div>
+      </div>
+
+      {/* Mundo Fútbol */}
+      <div className="bg-zinc-950 py-16">
+        <div className="max-w-7xl mx-auto px-6">
+          <h2 className="text-4xl font-bold mb-10">MUNDO FÚTBOL</h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="bg-zinc-900 p-6 rounded-3xl">Próximo Partido</div>
+            <div className="bg-zinc-900 p-6 rounded-3xl">Resultados</div>
+            <div className="bg-zinc-900 p-6 rounded-3xl">Tabla de Posiciones</div>
+            <div className="bg-zinc-900 p-6 rounded-3xl">Goleadores</div>
+            <div className="bg-zinc-900 p-6 rounded-3xl">Noticias</div>
+            <div className="bg-zinc-900 p-6 rounded-3xl">Fichajes</div>
           </div>
         </div>
       </div>
