@@ -1,13 +1,13 @@
 export default function Home() {
   return (
     <main className="min-h-screen bg-black text-white">
+      {/* Hero Section */}
       <div className="relative h-screen">
         <img 
           src="/hero.jpeg" 
           alt="Jugadores" 
           className="absolute inset-0 w-full h-full object-cover"
         />
-        
         <div className="absolute inset-0 bg-black/70"></div>
 
         <div className="relative z-10 h-full flex items-center justify-center text-center px-6">
@@ -24,13 +24,38 @@ export default function Home() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-yellow-400 text-black font-bold px-10 py-4 rounded-2xl text-lg">
+              <button className="bg-yellow-400 text-black font-bold px-10 py-4 rounded-2xl text-lg hover:bg-yellow-300 transition">
                 VER CAMISETAS
               </button>
-              <button className="border-2 border-white font-bold px-10 py-4 rounded-2xl text-lg">
+              <button className="border-2 border-white font-bold px-10 py-4 rounded-2xl text-lg hover:bg-white hover:text-black transition">
                 VER PROMOCIONES
               </button>
             </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Cards Section */}
+      <div className="max-w-7xl mx-auto px-6 py-16">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="group relative overflow-hidden rounded-3xl aspect-video bg-zinc-900">
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+            <div className="absolute bottom-6 left-6 text-2xl font-bold">CAMISETAS</div>
+          </div>
+
+          <div className="group relative overflow-hidden rounded-3xl aspect-video bg-zinc-900">
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+            <div className="absolute bottom-6 left-6 text-2xl font-bold">ACCESORIOS</div>
+          </div>
+
+          <div className="group relative overflow-hidden rounded-3xl aspect-video bg-zinc-900">
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+            <div className="absolute bottom-6 left-6 text-2xl font-bold">NUEVAS LLEGADAS</div>
+          </div>
+
+          <div className="group relative overflow-hidden rounded-3xl aspect-video bg-zinc-900">
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+            <div className="absolute bottom-6 left-6 text-2xl font-bold">OFERTAS</div>
           </div>
         </div>
       </div>
