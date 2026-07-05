@@ -8,7 +8,7 @@ export default function Home() {
           alt="Jugadores" 
           className="absolute inset-0 w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-black/70"></div>
+        <div className="absolute inset-0 bg-black/65"></div>
 
         <div className="relative z-10 h-full flex items-center justify-center text-center px-6">
           <div>
@@ -39,7 +39,7 @@ export default function Home() {
       <div className="max-w-7xl mx-auto px-6 py-16">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {['CAMISETAS', 'ACCESORIOS', 'NUEVAS LLEGADAS', 'OFERTAS'].map((title, i) => (
-            <div key={i} className="group relative overflow-hidden rounded-3xl aspect-[4/3] bg-zinc-900">
+            <div key={i} className="group relative overflow-hidden rounded-3xl aspect-[4/3] bg-zinc-900 cursor-pointer">
               <img 
                 src={`https://picsum.photos/id/${100 + i * 30}/600/400`} 
                 className="w-full h-full object-cover group-hover:scale-105 transition duration-500" 
@@ -62,7 +62,7 @@ export default function Home() {
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[1,2,3,4].map((i) => (
-              <div key={i} className="bg-zinc-900 rounded-3xl overflow-hidden hover:-translate-y-1 transition-all">
+              <div key={i} className="bg-zinc-900 rounded-3xl overflow-hidden hover:-translate-y-1 transition-all cursor-pointer">
                 <div className="aspect-square relative">
                   <img 
                     src={`https://picsum.photos/id/${220 + i * 23}/400/400`} 
@@ -86,16 +86,15 @@ export default function Home() {
           <p className="text-yellow-400 text-2xl font-bold mb-2">EL 10 DE LA CUADRA</p>
           <p className="text-gray-400 mb-8">Camisetas • Accesorios • Pasión por el fútbol</p>
           
-          <div className="flex justify-center gap-8 text-3xl">
+          <div className="flex justify-center gap-8 text-3xl mb-8">
             <a href="#" className="hover:text-yellow-400 transition">📸</a>
             <a href="#" className="hover:text-yellow-400 transition">📘</a>
             <a href="#" className="hover:text-yellow-400 transition">💬</a>
           </div>
           
-          <p className="text-gray-500 text-sm mt-10">© 2026 El 10 de la Cuadra. Todos los derechos reservados.</p>
+          <p className="text-gray-500 text-sm">© 2026 El 10 de la Cuadra. Todos los derechos reservados.</p>
         </div>
       </footer>
     </main>
   );
 }
-            
