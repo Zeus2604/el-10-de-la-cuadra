@@ -53,26 +53,24 @@ export default function Home() {
           ))}
         </div>
       </div>
-
       {/* Tendencias */}
       <div className="bg-zinc-950 py-20">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-5xl font-black text-center mb-4 tracking-tighter">TENDENCIAS</h2>
-          <p className="text-center text-gray-400 mb-12 text-lg">Las camisetas más deseadas del momento</p>
+          <h2 className="text-5xl font-black text-center mb-3 tracking-tighter">TENDENCIAS</h2>
+          <p className="text-center text-gray-400 mb-12">Las camisetas más deseadas del momento</p>
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[1,2,3,4].map((i) => (
-              <div key={i} className="group bg-zinc-900 rounded-3xl overflow-hidden hover:-translate-y-2 transition-all duration-300">
-                <div className="aspect-square bg-zinc-800 relative">
+              <div key={i} className="bg-zinc-900 rounded-3xl overflow-hidden hover:-translate-y-1 transition-all">
+                <div className="aspect-square relative">
                   <img 
-                    src={`https://picsum.photos/id/${200 + i * 20}/400/400`} 
-                    className="w-full h-full object-cover group-hover:scale-110 transition duration-500" 
+                    src={`https://picsum.photos/id/${220 + i * 23}/400/400`} 
+                    className="w-full h-full object-cover" 
                   />
-                  <div className="absolute top-3 right-3 bg-black/70 text-yellow-400 text-xs px-3 py-1 rounded-full">NEW</div>
                 </div>
                 <div className="p-5">
-                  <p className="text-yellow-400 text-sm font-medium">Real Madrid 2025</p>
-                  <p className="text-xl font-bold mt-1">Camiseta Local</p>
+                  <p className="text-yellow-400 text-sm">Real Madrid • 2025</p>
+                  <p className="font-bold text-lg mt-1">Camiseta Local</p>
                   <p className="text-yellow-400 text-2xl font-bold mt-3">$89.900</p>
                 </div>
               </div>
@@ -80,6 +78,22 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      {/* Footer */}
+      <footer className="bg-zinc-950 py-12 border-t border-zinc-800">
+        <div className="max-w-7xl mx-auto px-6 text-center">
+          <p className="text-yellow-400 text-2xl font-bold mb-2">EL 10 DE LA CUADRA</p>
+          <p className="text-gray-400 mb-8">Camisetas • Accesorios • Pasión por el fútbol</p>
+          
+          <div className="flex justify-center gap-8 text-3xl">
+            <a href="#" className="hover:text-yellow-400 transition">📸</a>
+            <a href="#" className="hover:text-yellow-400 transition">📘</a>
+            <a href="#" className="hover:text-yellow-400 transition">💬</a>
+          </div>
+          
+          <p className="text-gray-500 text-sm mt-10">© 2025 El 10 de la Cuadra. Todos los derechos reservados.</p>
+        </div>
+      </footer>
     </main>
   );
 }
