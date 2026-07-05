@@ -79,3 +79,4 @@ export default function Home() {
       {/* Mundo Fútbol - Placeholder */}
       <div className="bg-zinc-950 py-16">
         <div className="max-w-7xl mx-auto px-6">
+          
