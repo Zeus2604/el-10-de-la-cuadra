@@ -53,6 +53,7 @@ export default function Home() {
           ))}
         </div>
       </div>
+
       {/* Tendencias */}
       <div className="bg-zinc-950 py-20">
         <div className="max-w-7xl mx-auto px-6">
@@ -69,7 +70,7 @@ export default function Home() {
                   />
                 </div>
                 <div className="p-5">
-                  <p className="text-yellow-400 text-sm">Real Madrid • 2025</p>
+                  <p className="text-yellow-400 text-sm">Real Madrid • 2026</p>
                   <p className="font-bold text-lg mt-1">Camiseta Local</p>
                   <p className="text-yellow-400 text-2xl font-bold mt-3">$89.900</p>
                 </div>
@@ -91,9 +92,10 @@ export default function Home() {
             <a href="#" className="hover:text-yellow-400 transition">💬</a>
           </div>
           
-          <p className="text-gray-500 text-sm mt-10">© 2025 El 10 de la Cuadra. Todos los derechos reservados.</p>
+          <p className="text-gray-500 text-sm mt-10">© 2026 El 10 de la Cuadra. Todos los derechos reservados.</p>
         </div>
       </footer>
     </main>
   );
 }
+            
