@@ -12,14 +12,12 @@ export default function Home() {
 
         <div className="relative z-10 h-full flex items-center justify-center text-center px-6">
           <div>
-            <h1 className="text-6xl md:text-7xl font-black tracking-tighter leading-none mb-6">
-              PORQUE UN <span className="text-yellow-400">10</span><br />
-              NUNCA USA<br />
-              CUALQUIER<br />
-              CAMISETA.
+            <h1 className="text- md:text-7xl font-black tracking-tighter leading-none mb-6">
+              PORQUE UN <span className="text-yellow-400">10</span><br className="hidden md:block" />
+              NUNCA USA CUALQUIER<br className="hidden md:block" />CAMISETA.
             </h1>
             
-            <p className="text-xl text-gray-300 max-w-xl mx-auto mb-10">
+            <p className="text-lg md:text-xl text-gray-300 max-w-xl mx-auto mb-10">
               Las mejores camisetas, los mejores equipos, las mejores historias.
             </p>
 
@@ -39,7 +37,7 @@ export default function Home() {
       <div className="max-w-7xl mx-auto px-6 py-16">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {['CAMISETAS', 'ACCESORIOS', 'NUEVAS LLEGADAS', 'OFERTAS'].map((title, i) => (
-            <div key={i} className="group relative overflow-hidden rounded-3xl aspect-[4/3] bg-zinc-900 cursor-pointer">
+            <div key={i} className="group relative overflow-hidden rounded-3xl aspect-[4/3] bg-zinc-900">
               <img 
                 src={`https://picsum.photos/id/${100 + i * 30}/600/400`} 
                 className="w-full h-full object-cover group-hover:scale-105 transition duration-500" 
@@ -62,7 +60,7 @@ export default function Home() {
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[1,2,3,4].map((i) => (
-              <div key={i} className="bg-zinc-900 rounded-3xl overflow-hidden hover:-translate-y-1 transition-all cursor-pointer">
+              <div key={i} className="bg-zinc-900 rounded-3xl overflow-hidden hover:-translate-y-1 transition-all">
                 <div className="aspect-square relative">
                   <img 
                     src={`https://picsum.photos/id/${220 + i * 23}/400/400`} 
@@ -86,10 +84,9 @@ export default function Home() {
           <p className="text-yellow-400 text-2xl font-bold mb-2">EL 10 DE LA CUADRA</p>
           <p className="text-gray-400 mb-8">Camisetas • Accesorios • Pasión por el fútbol</p>
           
-          <div className="flex justify-center gap-8 text-3xl mb-8">
-            <a href="#" className="hover:text-yellow-400 transition">📸</a>
-            <a href="#" className="hover:text-yellow-400 transition">📘</a>
-            <a href="#" className="hover:text-yellow-400 transition">💬</a>
+          <div className="flex justify-center gap-10 text-4xl mb-8">
+            <a href="https://instagram.com" target="_blank" className="hover:text-yellow-400 transition">📷</a>
+            <a href="https://wa.me/573212899886" target="_blank" className="hover:text-yellow-400 transition">💬</a>
           </div>
           
           <p className="text-gray-500 text-sm">© 2026 El 10 de la Cuadra. Todos los derechos reservados.</p>
