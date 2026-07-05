@@ -3,10 +3,7 @@ import './globals.css';
 
 export const metadata: Metadata = {
   title: 'EL 10 DE LA CUADRA',
-  description: 'Las mejores camisetas, los mejores equipos, las mejores historias.',
-  icons: {
-    icon: '/favicon.ico',
-  },
+  description: 'Porque un 10 nunca usa cualquier camiseta.',
 };
 
 export default function RootLayout({
@@ -16,7 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es">
-      <body className="bg-black text-white">{children}</body>
+      <body>{children}</body>
     </html>
   );
 }
