@@ -35,7 +35,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Cards Section */}
+      {/* Categorías */}
       <div className="max-w-7xl mx-auto px-6 py-16">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           <div className="group relative overflow-hidden rounded-3xl aspect-[4/3] bg-zinc-900">
@@ -76,15 +76,15 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Mundo Fútbol - Placeholder */}
+      {/* Productos Destacados */}
       <div className="bg-zinc-950 py-16">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-4xl font-bold mb-10 text-yellow-400">MUNDO FÚTBOL</h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="bg-zinc-900 p-8 rounded-3xl text-center">Próximo Partido</div>
-            <div className="bg-zinc-900 p-8 rounded-3xl text-center">Resultados</div>
-            <div className="bg-zinc-900 p-8 rounded-3xl text-center">Tabla de Posiciones</div>
+          <h2 className="text-4xl font-bold mb-12 text-center">NUEVAS LLEGADAS</h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div className="bg-zinc-900 rounded-3xl overflow-hidden">Producto 1</div>
+            <div className="bg-zinc-900 rounded-3xl overflow-hidden">Producto 2</div>
+            <div className="bg-zinc-900 rounded-3xl overflow-hidden">Producto 3</div>
+            <div className="bg-zinc-900 rounded-3xl overflow-hidden">Producto 4</div>
           </div>
         </div>
       </div>
