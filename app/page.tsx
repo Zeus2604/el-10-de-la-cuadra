@@ -79,4 +79,15 @@ export default function Home() {
       {/* Mundo Fútbol - Placeholder */}
       <div className="bg-zinc-950 py-16">
         <div className="max-w-7xl mx-auto px-6">
+          <h2 className="text-4xl font-bold mb-10 text-yellow-400">MUNDO FÚTBOL</h2>
           
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="bg-zinc-900 p-8 rounded-3xl text-center">Próximo Partido</div>
+            <div className="bg-zinc-900 p-8 rounded-3xl text-center">Resultados</div>
+            <div className="bg-zinc-900 p-8 rounded-3xl text-center">Tabla de Posiciones</div>
+          </div>
+        </div>
+      </div>
+    </main>
+  );
+}
