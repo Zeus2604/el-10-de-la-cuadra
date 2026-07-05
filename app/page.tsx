@@ -8,9 +8,9 @@ export default function Home() {
           alt="Jugadores" 
           className="absolute inset-0 w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-black/65"></div>
+        <div className="absolute inset-0 bg-black/70"></div>
 
-        <div className="relative z-10 h-full flex items-center justify-center text-center px-6">
+        <div className="relative z-10 h-full flex items-center justify-center text-center px-6 pt-12">
           <div>
             <h1 className="text- md:text-7xl font-black tracking-tighter leading-none mb-6">
               PORQUE UN <span className="text-yellow-400">10</span><br className="hidden md:block" />
@@ -84,9 +84,9 @@ export default function Home() {
           <p className="text-yellow-400 text-2xl font-bold mb-2">EL 10 DE LA CUADRA</p>
           <p className="text-gray-400 mb-8">Camisetas • Accesorios • Pasión por el fútbol</p>
           
-          <div className="flex justify-center gap-10 text-4xl mb-8">
+          <div className="flex justify-center gap-12 text-5xl mb-8">
             <a href="https://instagram.com" target="_blank" className="hover:text-yellow-400 transition">📷</a>
-            <a href="https://wa.me/573212899886" target="_blank" className="hover:text-yellow-400 transition">💬</a>
+            <a href="https://wa.me/573212899886" target="_blank" className="hover:text-yellow-400 transition">💚</a>
           </div>
           
           <p className="text-gray-500 text-sm">© 2026 El 10 de la Cuadra. Todos los derechos reservados.</p>
