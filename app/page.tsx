@@ -1,43 +1,21 @@
 export default function Home() {
   return (
     <main className="min-h-screen bg-black text-white">
-      {/* Hero */}
+      {/* Hero - Solo imagen grande */}
       <div className="relative h-screen">
         <img 
           src="/hero.jpeg" 
           alt="Jugadores" 
           className="absolute inset-0 w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-black/65"></div>
-
-        <div className="relative z-10 h-full flex items-center justify-center text-center px-6">
-          <div>
-            <h1 className="text-5xl md:text-7xl font-black tracking-tighter leading-none mb-6">
-              PORQUE UN <span className="text-yellow-400">10</span><br className="hidden md:block" />
-              NUNCA USA CUALQUIER<br className="hidden md:block" />CAMISETA.
-            </h1>
-            
-            <p className="text-lg md:text-xl text-gray-300 max-w-xl mx-auto mb-10">
-              Las mejores camisetas, los mejores equipos, las mejores historias.
-            </p>
-
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-yellow-400 text-black font-bold px-10 py-4 rounded-2xl text-lg hover:bg-yellow-300 transition">
-                VER CAMISETAS
-              </button>
-              <button className="border-2 border-white font-bold px-10 py-4 rounded-2xl text-lg hover:bg-white hover:text-black transition">
-                VER PROMOCIONES
-              </button>
-            </div>
-          </div>
-        </div>
+        <div className="absolute inset-0 bg-black/50"></div>
       </div>
 
-      {/* Categorías con mejores imágenes */}
+      {/* Categorías */}
       <div className="max-w-7xl mx-auto px-6 py-16">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           <div className="group relative overflow-hidden rounded-3xl aspect-[4/3] bg-zinc-900">
-            <img src="https://picsum.photos/id/1015/600/400" className="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+            <img src="/images/categorias/camisetas.jpg" className="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
             <div className="absolute bottom-6 left-6">
               <div className="text-sm text-yellow-400">COLECCIÓN</div>
@@ -46,7 +24,7 @@ export default function Home() {
           </div>
 
           <div className="group relative overflow-hidden rounded-3xl aspect-[4/3] bg-zinc-900">
-            <img src="https://picsum.photos/id/201/600/400" className="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+            <img src="/images/categorias/accesorios.jpg" className="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
             <div className="absolute bottom-6 left-6">
               <div className="text-sm text-yellow-400">COLECCIÓN</div>
@@ -55,7 +33,7 @@ export default function Home() {
           </div>
 
           <div className="group relative overflow-hidden rounded-3xl aspect-[4/3] bg-zinc-900">
-            <img src="https://picsum.photos/id/133/600/400" className="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+            <img src="/images/categorias/nuevas.jpg" className="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
             <div className="absolute bottom-6 left-6">
               <div className="text-sm text-yellow-400">NUEVA</div>
@@ -64,7 +42,7 @@ export default function Home() {
           </div>
 
           <div className="group relative overflow-hidden rounded-3xl aspect-[4/3] bg-zinc-900">
-            <img src="https://picsum.photos/id/180/600/400" className="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+            <img src="/images/categorias/ofertas.jpg" className="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
             <div className="absolute bottom-6 left-6">
               <div className="text-sm text-yellow-400">HOY</div>
