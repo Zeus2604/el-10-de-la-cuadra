@@ -1,14 +1,36 @@
 export default function Home() {
   return (
     <main className="min-h-screen bg-black text-white">
-      {/* Hero - Solo imagen grande */}
-      <div className="relative h-screen">
+      {/* Hero - Optimizado para móvil y escritorio */}
+      <div className="relative h-screen overflow-hidden">
         <img 
           src="/hero.jpeg" 
           alt="Jugadores" 
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full object-cover md:object-top object-center scale-150 md:scale-100"
         />
-        <div className="absolute inset-0 bg-black/50"></div>
+        <div className="absolute inset-0 bg-black/60 md:bg-black/55"></div>
+
+        <div className="relative z-10 h-full flex items-center justify-center text-center px-6">
+          <div className="max-w-2xl">
+            <h1 className="text-4xl md:text-6xl font-black tracking-tighter leading-none mb-6">
+              PORQUE UN <span className="text-yellow-400">10</span><br className="hidden md:block" />
+              NUNCA USA CUALQUIER<br className="hidden md:block" />CAMISETA.
+            </h1>
+            
+            <p className="text-base md:text-xl text-gray-300 max-w-lg mx-auto mb-10">
+              Las mejores camisetas, los mejores equipos, las mejores historias.
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <button className="bg-yellow-400 text-black font-bold px-8 py-3.5 rounded-2xl text-base hover:bg-yellow-300 transition">
+                VER CAMISETAS
+              </button>
+              <button className="border-2 border-white font-bold px-8 py-3.5 rounded-2xl text-base hover:bg-white hover:text-black transition">
+                VER PROMOCIONES
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* Categorías */}
@@ -48,7 +70,7 @@ export default function Home() {
               <div className="text-sm text-yellow-400">HOY</div>
               <div className="text-3xl font-bold tracking-tight">OFERTAS</div>
             </div>
-          </div>
+            </div>
         </div>
       </div>
 
