@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <main className="min-h-screen bg-black text-white">
-      {/* Hero - Imagen limpia con logo arriba */}
+      {/* Hero */}
       <div className="relative h-screen overflow-hidden">
         <img 
           src="/hero.jpeg" 
@@ -14,12 +14,12 @@ export default function Home() {
           className="md:hidden absolute inset-0 w-full h-full object-cover object-center"
         />
         
-        <div className="absolute inset-0 bg-black/50"></div>
+        <div className="absolute inset-0 bg-black/55"></div>
 
-        {/* Logo superior */}
-        <div className="absolute top-8 left-1/2 -translate-x-1/2 z-20">
-          <p className="text-yellow-400 text-2xl md:text-3xl font-black tracking-widest">
-            EL 10 DE LA CUADRA
+        {/* Logo en esquina superior izquierda */}
+        <div className="absolute top-6 left-6 z-20">
+          <p className="text-yellow-400 text- md:text-3xl font-black tracking-wider leading-none">
+            EL 10<br />DE LA CUADRA
           </p>
         </div>
       </div>
@@ -81,3 +81,6 @@ export default function Home() {
     </main>
   );
 }
+
+
+expor...
