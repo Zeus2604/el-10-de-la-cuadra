@@ -1,19 +1,27 @@
 export default function Home() {
   return (
     <main className="min-h-screen bg-black text-white">
-      {/* Hero */}
+      {/* Hero - Imagen limpia con logo arriba */}
       <div className="relative h-screen overflow-hidden">
         <img 
           src="/hero.jpeg" 
           alt="Jugadores" 
-          className="hidden md:block absolute inset-0 w-full h-full object-cover"
+          className="hidden md:block absolute inset-0 w-full h-full object-cover object-top"
         />
         <img 
           src="/hero-mobile.jpeg" 
           alt="Jugadores" 
           className="md:hidden absolute inset-0 w-full h-full object-cover object-center"
         />
-        <div className="absolute inset-0 bg-black/60"></div>
+        
+        <div className="absolute inset-0 bg-black/50"></div>
+
+        {/* Logo superior */}
+        <div className="absolute top-8 left-1/2 -translate-x-1/2 z-20">
+          <p className="text-yellow-400 text-2xl md:text-3xl font-black tracking-widest">
+            EL 10 DE LA CUADRA
+          </p>
+        </div>
       </div>
 
       {/* Categorías */}
@@ -67,7 +75,6 @@ export default function Home() {
             <a href="https://www.instagram.com/oficialsoccerskin" target="_blank" className="hover:text-yellow-400 transition">📷</a>
             <a href="https://wa.me/573212899886" target="_blank" className="hover:text-green-400 transition">💬</a>
           </div>
-          
           <p className="text-gray-500 text-sm">© 2026 El 10 de la Cuadra. Todos los derechos reservados.</p>
         </div>
       </footer>
