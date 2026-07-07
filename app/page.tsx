@@ -1,14 +1,19 @@
 export default function Home() {
   return (
     <main className="min-h-screen bg-black text-white">
-      {/* Hero - Solo imagen limpia */}
+      {/* Hero */}
       <div className="relative h-screen overflow-hidden">
         <img 
           src="/hero.jpeg" 
           alt="Jugadores" 
-          className="absolute inset-0 w-full h-full object-cover object-center md:object-top"
+          className="hidden md:block absolute inset-0 w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-black/55"></div>
+        <img 
+          src="/hero-mobile.jpeg" 
+          alt="Jugadores" 
+          className="md:hidden absolute inset-0 w-full h-full object-cover object-center"
+        />
+        <div className="absolute inset-0 bg-black/60"></div>
       </div>
 
       {/* Categorías */}
