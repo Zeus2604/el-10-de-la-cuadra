@@ -20,41 +20,57 @@ export default function Home() {
       {/* Categorías */}
       <div className="max-w-7xl mx-auto px-6 py-16">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-          <div className="group relative overflow-hidden rounded-3xl aspect-[4/3] bg-zinc-900">
+          <a 
+            href="https://wa.me/573212899886?text=Hola%2C%20quiero%20ver%20las%20camisetas%20que%20tienen%20disponibles" 
+            target="_blank"
+            className="group relative overflow-hidden rounded-3xl aspect-[4/3] bg-zinc-900 block"
+          >
             <img src="/images/categorias/camisetas.jpg" className="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
             <div className="absolute bottom-6 left-6">
               <div className="text-sm text-yellow-400">COLECCIÓN</div>
               <div className="text-3xl font-bold tracking-tight">CAMISETAS</div>
             </div>
-          </div>
+          </a>
 
-          <div className="group relative overflow-hidden rounded-3xl aspect-[4/3] bg-zinc-900">
+          <a 
+            href="https://wa.me/573212899886?text=Hola%2C%20quiero%20ver%20los%20accesorios%20que%20tienen%20disponibles" 
+            target="_blank"
+            className="group relative overflow-hidden rounded-3xl aspect-[4/3] bg-zinc-900 block"
+          >
             <img src="/images/categorias/accesorios.jpg" className="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
             <div className="absolute bottom-6 left-6">
               <div className="text-sm text-yellow-400">COLECCIÓN</div>
               <div className="text-3xl font-bold tracking-tight">ACCESORIOS</div>
             </div>
-          </div>
+          </a>
 
-          <div className="group relative overflow-hidden rounded-3xl aspect-[4/3] bg-zinc-900">
+          <a 
+            href="https://wa.me/573212899886?text=Hola%2C%20quiero%20ver%20las%20nuevas%20llegadas" 
+            target="_blank"
+            className="group relative overflow-hidden rounded-3xl aspect-[4/3] bg-zinc-900 block"
+          >
             <img src="/images/categorias/nuevas.jpg" className="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
             <div className="absolute bottom-6 left-6">
               <div className="text-sm text-yellow-400">NUEVA</div>
               <div className="text-3xl font-bold tracking-tight">LLEGADAS</div>
             </div>
-          </div>
+          </a>
 
-          <div className="group relative overflow-hidden rounded-3xl aspect-[4/3] bg-zinc-900">
+          <a 
+            href="https://wa.me/573212899886?text=Hola%2C%20quiero%20ver%20las%20ofertas%20que%20tienen" 
+            target="_blank"
+            className="group relative overflow-hidden rounded-3xl aspect-[4/3] bg-zinc-900 block"
+          >
             <img src="/images/categorias/ofertas.jpg" className="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
             <div className="absolute bottom-6 left-6">
               <div className="text-sm text-yellow-400">HOY</div>
               <div className="text-3xl font-bold tracking-tight">OFERTAS</div>
             </div>
-          </div>
+          </a>
         </div>
       </div>
 
