@@ -81,6 +81,3 @@ export default function Home() {
     </main>
   );
 }
-
-
-expor...
