@@ -72,6 +72,15 @@ export default function Home() {
           <p className="text-gray-500 text-sm">© 2026 El 10 de la Cuadra. Todos los derechos reservados.</p>
         </div>
       </footer>
+
+      {/* Botón flotante WhatsApp */}
+      <a 
+        href="https://wa.me/573212899886" 
+        target="_blank"
+        className="fixed bottom-6 right-6 bg- w-16 h-16 rounded-full flex items-center justify-center shadow-2xl hover:bg- transition-all hover:scale-110 z-50"
+      >
+        <span className="text-4xl">💬</span>
+      </a>
     </main>
   );
 }
